@@ -1,0 +1,24 @@
+//Button Controlled LED
+
+// C++ code
+//
+int buttonstate = 0;
+int led = 3;
+
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  buttonstate = digitalRead(2);
+  while(buttonstate == LOW){
+    digitalWrite(led, HIGH);
+  }
+  digitalWrite(led, LOW);
+  Serial.println(buttonstate);
+  delay(10);
+}
