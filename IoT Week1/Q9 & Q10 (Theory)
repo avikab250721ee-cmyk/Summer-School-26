@@ -1,0 +1,29 @@
+# Q9. Difference Between `git pull`, `git fetch`, and `git clone`
+
+| Command | Description | When to Use |
+| :--- | :--- | :--- |
+| **`git clone`** | Creates a complete local copy of a remote repository, including all files, branches, and commit history. | Use when downloading a repository for the first time. |
+| **`git fetch`** | Downloads the latest commits, files, and refs from the remote repository **without** modifying your local working branch. | Use when you want to review remote changes before merging them. |
+| **`git pull`** | Downloads changes from the remote repository and **automatically merges** them into your current local branch. | Use when you want to quickly update your local repository with the latest changes. |
+
+> 💡 **Quick Formula:** `git pull` = `git fetch` + `git merge`
+
+### Summary
+* **`git clone`** → Creates a brand new local copy of a remote repository.
+* **`git fetch`** → Retrieves remote updates safely without changing your local files.
+* **`git pull`** → Retrieves remote updates and immediately merges them into your current branch.
+
+---
+
+# Q10. The `.gitignore` File
+
+### What is a `.gitignore` File?
+A **`.gitignore`** file is a text file that tells Git which files and directories to intentionally ignore. Files matched by a `.gitignore` pattern are not tracked or committed to the repository. 
+
+### Why Use It?
+It helps keep your repository clean and secure by excluding:
+* **Compiled files & binaries** (e.g., `.exe`, `.class`, `dist/`)
+* **Dependency folders** (e.g., `node_modules/`, `venv/`)
+* **Temporary system files** (e.g., `.DS_Store`, `Thumbs.db`)
+* **IDE/Editor configurations** (e.g., `.vscode/`, `.idea/`)
+* **Sensitive data & environment variables** (e.g., `.env`)
