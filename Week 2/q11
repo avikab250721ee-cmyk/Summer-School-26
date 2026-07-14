@@ -1,0 +1,37 @@
+# Q11. IoT Architecture
+
+The **Internet of Things (IoT)** architecture consists of four layers that work together to collect, transmit, process, and present data.
+
+```text
+┌──────────────────────────────────────────────┐
+│              Application Layer               │
+│ Example: Smart Home Mobile App               │
+└──────────────────────────────────────────────┘
+                    ▲
+                    │
+┌──────────────────────────────────────────────┐
+│               Processing Layer               │
+│ Example: AWS IoT Cloud Server                │
+└──────────────────────────────────────────────┘
+                    ▲
+                    │
+┌──────────────────────────────────────────────┐
+│                Network Layer                 │
+│ Example: Wi-Fi Router / MQTT                 │
+└──────────────────────────────────────────────┘
+                    ▲
+                    │
+┌──────────────────────────────────────────────┐
+│              Perception Layer                │
+│ Example: DHT11 Temperature Sensor            │
+└──────────────────────────────────────────────┘
+```
+
+## Layer Description and Examples
+
+| Layer | Function | Example Device/Technology |
+|-------|----------|---------------------------|
+| **Perception Layer** | Collects data from the physical environment using sensors and actuators. | DHT11 Temperature Sensor |
+| **Network Layer** | Transfers data between devices and servers/cloud. | Wi-Fi Router / MQTT Protocol |
+| **Processing Layer** | Stores, processes, and analyzes collected data. | AWS IoT Cloud Server |
+| **Application Layer** | Provides services and interfaces for end users. | Smart Home Mobile Application |
