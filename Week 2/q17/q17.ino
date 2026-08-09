@@ -1,7 +1,6 @@
 /*
  * Project: PWM Night Light with Breathing Modes
  * Question: Q17
- * Author: [Shashwat Singh]
  */
 
 #include <Arduino.h>
