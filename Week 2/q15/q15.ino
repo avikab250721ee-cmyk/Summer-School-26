@@ -1,7 +1,6 @@
 /*
  * Project: Digital Piano with Tone Generation
  * Question: Q15
- * Author: [Shashwat Singh]
  */
 
 #include <Arduino.h>
