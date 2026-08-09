@@ -1,7 +1,6 @@
 /*
  * Project: Serial Command Interface for LED Control
  * Question: Q16
- * Author: [Shashwat Singh]
  * Commands List:
  *              LED_ON   - turn LED on
  *              LED_OFF  - turn LED off
